@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WaterCoolingInterfaceClass</class>
+ <widget class="QMainWindow" name="WaterCoolingInterfaceClass">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1124</width>
+    <height>797</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WaterCoolingInterface</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButton_open">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>680</y>
+      <width>93</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>连接水冷</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_close">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>680</y>
+      <width>93</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>断开连接</string>
+    </property>
+   </widget>
+   <widget class="QCustomPlot" name="graph" native="true">
+    <property name="geometry">
+     <rect>
+      <x>62</x>
+      <y>70</y>
+      <width>900</width>
+      <height>600</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_connected">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::RichText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="temperature">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>10</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit_host_address">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>90</y>
+      <width>91</width>
+      <height>40</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_set_parameter">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>610</y>
+      <width>93</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>参数设置</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_host_address">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>65</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Host地址</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit_port">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>180</y>
+      <width>91</width>
+      <height>40</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_port">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>150</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>端口号</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit_x_axis_start_point">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>270</y>
+      <width>91</width>
+      <height>40</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_x_axis_start_point">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>240</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X轴起点</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit_y_axis_start_point">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>450</y>
+      <width>91</width>
+      <height>40</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_y_axis_start_point">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>420</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Y轴起点</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit_y_axis_end_point">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>540</y>
+      <width>91</width>
+      <height>40</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_y_axis_end_point">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>510</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Y轴终点</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_x_axis_end_point">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>330</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X轴终点</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit_x_axis_end_point">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>360</y>
+      <width>91</width>
+      <height>40</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_signature">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>690</y>
+      <width>421</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ff0000;&quot;&gt;姚星宇  &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#00ff00;&quot;&gt;刘吕梁  &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#0000ff;&quot;&gt;黄奕欣&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <zorder>graph</zorder>
+   <zorder>pushButton_close</zorder>
+   <zorder>pushButton_open</zorder>
+   <zorder>label_connected</zorder>
+   <zorder>temperature</zorder>
+   <zorder>plainTextEdit_host_address</zorder>
+   <zorder>pushButton_set_parameter</zorder>
+   <zorder>label_host_address</zorder>
+   <zorder>plainTextEdit_port</zorder>
+   <zorder>label_port</zorder>
+   <zorder>plainTextEdit_x_axis_start_point</zorder>
+   <zorder>label_x_axis_start_point</zorder>
+   <zorder>plainTextEdit_y_axis_start_point</zorder>
+   <zorder>label_y_axis_start_point</zorder>
+   <zorder>plainTextEdit_y_axis_end_point</zorder>
+   <zorder>label_y_axis_end_point</zorder>
+   <zorder>label_x_axis_end_point</zorder>
+   <zorder>plainTextEdit_x_axis_end_point</zorder>
+   <zorder>label_signature</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="watercoolinginterface.qrc"/>
+ </resources>
+ <connections/>
+</ui>
